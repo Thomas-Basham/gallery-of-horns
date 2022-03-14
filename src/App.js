@@ -1,15 +1,19 @@
 import React from 'react';
+import Header from './Header.js'
+import Main from './Main'
+import Footer from './Footer'
+import './App.css'
 
-class App extends React.Component{
+class App extends React.Component{x
   render(){
     return (
       <>
-    <header>
-      <h1>Gallery of Lawrence</h1>
-      </header>
+      <Header></Header>
+      <Main></Main>
+      <Footer></Footer>
       </>
     ); 
   }
 }
 
-export default App;
+export default App;  
