@@ -4,7 +4,7 @@ class HornedBeast extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      favorites: 0,
+      favorites: 0
     }
   }
 handleFavorites = () => {
@@ -17,22 +17,28 @@ handleFavorites = () => {
       <>
         <article>
         <h2>{this.props.title}</h2>
+        <p>{this.state.favorites} 😍</p>
+
         <img 
-        onClick={this.state.favorites}// need to add state and favorti
+
+        onClick={this.handleFavorites}
         src={this.props.image_url} 
         alt={this.props.alt} 
         title={this.props.imgTitle} 
         width='200' 
         height='200'
         >{this.props.image}</img>
+
         <p>{this.props.description}</p>
+
         </article>
       </>
       
       
-
-    )
+      
+      )
+    }
   }
-}
+
 
 export default HornedBeast;
