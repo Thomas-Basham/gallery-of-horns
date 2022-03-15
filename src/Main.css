@@ -2,4 +2,25 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  overflow: auto;
+
+  
+}
+
+main article{
+
+  text-align: center;
+  align-items: center;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+ border: solid 1px;
+ margin: 1vw;
+ width: 400px;
+ height: 400px;
+
+}
+
+main p:last-of-type{
+  overflow: auto;
 }
