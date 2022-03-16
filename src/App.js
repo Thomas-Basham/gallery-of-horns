@@ -2,9 +2,10 @@ import React from 'react';
 import Header from './Header.js';
 import Main from './Main';
 import Footer from './Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import data from './data.json';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import { Main }from 'react-bootstrap';
 
 class App extends React.Component{x
   render(){
@@ -13,7 +14,9 @@ class App extends React.Component{x
       <Header
 
       />
+      
       <Main
+      
         data={data}
 
         />
