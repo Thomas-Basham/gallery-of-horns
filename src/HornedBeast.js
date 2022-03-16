@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card,CardGroup } from 'react-bootstrap'
+import { Card,CardGroup, Modal} from 'react-bootstrap'
 // import Button from 'react-bootstrap/Card'
 
 class HornedBeast extends React.Component {
@@ -14,17 +14,25 @@ handleFavorites = () => {
     favorites: this.state.favorites + 1
   });
 }
+state = {
+  isOpen: false
+};
+
+openModal = () => this.setState({ isOpen: true });
+closeModal = () => this.setState({ isOpen: false });
+
+
   render() {
     return (
       <>  
       {/* <Row className='row-cols-1 row-cols-md-2 g-4'></Row> */}
 
         <CardGroup >
-      <Card  className="card text-center h-100" style={{ width: '18rem'}}>
-  <Card.Img  onClick={this.handleFavorites} variant="top" src={this.props.image_url} alt={this.props.alt} width="200px" height="200px"/>
+      <Card  className="card text-center h-100" style={{ width: '16rem'}}>
+  <Card.Img className="h-100" onClick={this.openModal}variant="top" src={this.props.image_url} alt={this.props.alt} width="150rem" height="150rem"/>
   <Card.Body className="h-100">
     <Card.Title >{this.props.title}</Card.Title>
-    <Card.Text>
+    <Card.Text className="bg-image hover-zoom" onClick={this.handleFavorites}  style={{ hover: 'cu'}}>
     {this.props.description}
     <br></br>
     {this.state.favorites} 😍

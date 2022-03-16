@@ -10,10 +10,18 @@ main {
 .card-group{
   margin: 20px;
 }
+
+.card-body p:last-of-type:hover  {
+
+  color: aqua;
+  cursor:pointer;
+  user-select: none;  
+
+}
  .card{
 
  border: solid 1px;
- margin: 1vw ;
+
 padding: 2vw;
  font-family: 'Special Elite', cursive;
  width: max-content;
