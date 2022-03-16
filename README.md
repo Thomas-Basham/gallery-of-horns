@@ -71,12 +71,45 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-Number and name of feature: ________________________________
+## Lab 01, 02
 
-Estimate of time needed to complete: _____
+## Gallery of Horns
 
-Start time: _____
+I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+Author: Thomas Basham
 
-Finish time: _____
+## Links and Resources
 
-Actual time needed to complete: _____
+## Reflections and Comments/Questions
+
+How do I get the leftover two articles from centering themselves in the bottom and make it align with the ones above them?
+
+## Number and name of feature: Feature #1: Display images
+
+    Estimate of time needed to complete: 1/2 hr
+
+    Start time: 2:00
+
+    Finish time: 3:00
+
+    Actual time needed to complete: 1hr
+
+## Number and name of feature: Feature #2: Allow users to vote for their favorite beast
+
+    Estimate of time needed to complete: 2hr
+
+    Start time: 3:00
+
+    Finish time: 5:00
+
+    Actual time needed to complete: 2hr
+
+## Number and name of feature: Feature 3: Bootstrap
+
+    Estimate of time needed to complete: 1/2hr
+
+    Start time: 5:00
+
+    Finish time: 5:30
+
+    Actual time needed to complete: 1/2hr
