@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Special+Elite&display=swap');
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: auto;
+
+  
+}
+
+main article{
+resize: both;
+overflow: auto;
+  text-align: center;
+  align-items: center;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+ border: solid 1px;
+ margin: 1vw;
+ width: 400px;
+ font-family: 'Special Elite', cursive;
+ height: 400px;
+
+}
+/* main h2{
+  font-family: 'Special Elite', cursive;
+} */
+main p:last-of-type{
+  overflow: auto;
+}
