@@ -17,7 +17,6 @@ handleFavorites = () => {
       <>
         <article>
         <h2>{this.props.title}</h2>
-        <p>{this.state.favorites} 😍</p>
 
         <img 
 
@@ -27,9 +26,15 @@ handleFavorites = () => {
         title={this.props.imgTitle} 
         width='200' 
         height='200'
+
         >{this.props.image}</img>
 
         <p>{this.props.description}</p>
+
+      <p>{this.state.favorites} 😍</p>
+      {/* <p horns={this.props.horns}> 😍</p> */}
+
+
 
         </article>
       </>
