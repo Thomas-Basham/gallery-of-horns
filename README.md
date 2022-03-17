@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-## Lab 01, 02
+## Lab 01, 02, 03
 
 ## Gallery of Horns
 
@@ -79,6 +79,12 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 Author: Thomas Basham
 
 ## Links and Resources
+
+[https://www.geeksforgeeks.org/how-to-fit-the-image-into-modal-popup-using-bootstrap/]
+
+[https://www.pluralsight.com/guides/how-to-trigger-modal-for-react-bootstrap]
+
+[https://react-bootstrap.github.io/components/modal/]
 
 ## Reflections and Comments/Questions
 

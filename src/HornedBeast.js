@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card,CardGroup, Modal} from 'react-bootstrap'
+import { Card,CardGroup, Button, Modal} from 'react-bootstrap'
 // import Button from 'react-bootstrap/Card'
 
 class HornedBeast extends React.Component {
@@ -25,7 +25,17 @@ closeModal = () => this.setState({ isOpen: false });
   render() {
     return (
       <>  
-      {/* <Row className='row-cols-1 row-cols-md-2 g-4'></Row> */}
+<Modal size="xl" aria-labelledby="contained-modal-title-vcenter" centered show={this.state.isOpen} >
+  <Modal.Header >
+    <Modal.Title> <img src={this.props.image_url} alt={this.props.alt}  width="100%" height="auto"></img></Modal.Title>
+  </Modal.Header>
+  <Modal.Body> {this.props.description} </Modal.Body>
+  <Modal.Footer>
+    <Button variant="secondary" onClick={this.closeModal}>
+      Close
+    </Button>
+  </Modal.Footer>
+</Modal>
 
         <CardGroup >
       <Card  className="card text-center h-100" style={{ width: '16rem'}}>

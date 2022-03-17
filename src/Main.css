@@ -15,7 +15,7 @@ main {
 
   color: aqua;
   cursor:pointer;
-  user-select: none;  
+  user-select: none; 
 
 }
  .card{
@@ -30,10 +30,24 @@ padding: 2vw;
 
 .card img{
   text-align: center;
-  /* width: 200px;
-  height: 200px; */
+
+}
+.modal-body{
+  font-family: 'Special Elite', cursive;
+
+  
+}
+.modal-content{
+  width: 80%;
+  height: 100%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  display: block;
+  align-items: center;
+  overflow :visible;
 }
 
-main p:last-of-type{
+/* main p:last-of-type{
   overflow: auto;
-}
+} */
