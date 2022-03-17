@@ -88,7 +88,29 @@ Author: Thomas Basham
 
 ## Reflections and Comments/Questions
 
+### Lab-01
+
 How do I get the leftover two articles from centering themselves in the bottom and make it align with the ones above them?
+
+### Lab-02
+
+### Lab-03
+
+What went well, that I might forget if I don’t write down?
+
+Creating and rendering the modal was surprisingly intuitive once I studied the docs and made some searches
+
+What did I learn today?
+
+How to create a modal and get it to display per the event. Also, how to use the .filter() method to filter values out of an array and such.
+
+What should I do differently next time?
+
+I think today went well. I might've gotten finished faster if I was sitting alone, but I don't mind spending the extra hours on this stuff right now.
+
+What still puzzles me, or what do I need to learn more about?
+
+I'm not 100% on the syntax of the filter method so I'd like to know more about that
 
 ## Number and name of feature: Feature #1: Display images
 
