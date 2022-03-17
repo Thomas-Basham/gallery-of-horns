@@ -6,8 +6,9 @@ class Main extends React.Component {
 
   render() {
     let hornedBeasts = [];
-    this.props.data.forEach((hornedBeast, index) => {
-      hornedBeasts.push(
+    this.props.data.map((hornedBeast, index) => {
+      
+      return hornedBeasts.push(
         <HornedBeast
         
         image_url={hornedBeast.image_url}
