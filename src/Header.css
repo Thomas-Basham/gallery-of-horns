@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 header{
-  margin: 40px 0 0 0;
+  margin: 5vw 0 0 0;
 }
 h1{
-  font-size:10vh;
-  letter-spacing: 1.9px;
+  font-size: 100px;
+  letter-spacing: .9vw;
   text-align: center;
   font-family: 'Special Elite', cursive;
 }
