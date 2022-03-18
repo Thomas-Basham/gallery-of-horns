@@ -11,21 +11,15 @@ class App extends React.Component{x
   render(){
     return (
       <>
-      <Header
 
-      />
+      <Header/>
       
       <Main
-      
         data={data}
-
         />
   
-      <Footer
-      
-      />
+      <Footer/>
 
-      
       </>
     ); 
   }
