@@ -1,5 +1,6 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
+import SelectedBeasts from './SelectedBeasts';
 import MyForm from './MyForm';
 import './Main.css';
 
@@ -25,6 +26,8 @@ class Main extends React.Component {
 
       let myForm =  <MyForm/>
 
+      let selectedBeasts = <SelectedBeasts/>
+
       // let myForm = this.props.data.map((hornedBeast, index) => {
               
       //   return (
@@ -37,10 +40,12 @@ class Main extends React.Component {
      
     return (
       <main >
+        {selectedBeasts}
         
         {myForm}
 
         {hornedBeasts}
+
       {/* <HornedBeast title='Billy Goat' img imageURL="billy-goat.jpeg" alt='Billy Goat' imgTitle='billy goat' description= 'A nimble and fierce horned beast'/> */}
       
        </main>

@@ -1,22 +1,26 @@
 import React from 'react';
-import { Card,CardGroup, Button, Modal} from 'react-bootstrap'
+import { Card, Modal, Button, CardGroup } from 'react-bootstrap'
+// import SelectedBeasts from './SelectedBeasts';
+
 // import Button from 'react-bootstrap/Card'
 
 class HornedBeast extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      favorites: 0
+      favorites: 0,
+      
     }
   }
 
 handleFavorites = () => this.setState({favorites: this.state.favorites + 1});
 
-state = {isOpen: false};
+// state = {isOpen: false};
 
 openModal = () => this.setState({ isOpen: true });
 closeModal = () => this.setState({ isOpen: false });
 
+handleOpenModal = () => {this.props.openModal()}
 
   render() {
     return (
@@ -32,10 +36,9 @@ closeModal = () => this.setState({ isOpen: false });
     </Button>
   </Modal.Footer>
 </Modal>
-
-        <CardGroup >
+      <CardGroup>
       <Card  className="card text-center h-100" style={{ width: '16rem'}}>
-  <Card.Img className="h-100" onClick={this.openModal}variant="top" src={this.props.image_url} alt={this.props.alt} width="150rem" height="150rem"/>
+  <Card.Img className="h-100" onClick={this.handleOpenModal} variant="top" src={this.props.image_url} alt={this.props.alt} width="150rem" height="150rem"/>
   <Card.Body className="h-100">
     <Card.Title >{this.props.title}</Card.Title>
     <Card.Text className="bg-image hover-zoom" onClick={this.handleFavorites}  style={{ hover: 'cu'}}>
@@ -47,6 +50,7 @@ closeModal = () => this.setState({ isOpen: false });
   </Card.Body>
 </Card>
 </CardGroup>
+
 
         {/* <article>
         <h2>{this.props.title}</h2>
