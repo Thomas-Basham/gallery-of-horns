@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  overflow: auto;
-
-  
+main{
+  /* align-items: center; */
+  /* flex-direction: column; */
 }
 .mb-3{
 
-  position:static;
+  /* position: absolute; */
+  text-align: center;
+
 
 }
 .card-group{

@@ -3,8 +3,8 @@ import { Form, } from 'react-bootstrap'
 // import HornedBeast from './HornedBeast';
 
 
-
 let numHorns = [1, 2, 3, 100]
+
 class MyForm extends React.Component {
   constructor(props) {
     super(props);
@@ -39,7 +39,7 @@ class MyForm extends React.Component {
         <>
    <Form.Group className="mb-3">
 
-    <Form.Label>Number of Horns</Form.Label>
+    <Form.Label>Filter Beasts by Number of Horns</Form.Label>
 
     <Form.Select name="selected" onChange={this.handleSelect}>
       <option value="1">1</option>

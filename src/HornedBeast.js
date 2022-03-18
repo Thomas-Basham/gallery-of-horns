@@ -9,7 +9,7 @@ class HornedBeast extends React.Component {
     super(props);
     this.state = {
       favorites: 0,
-      
+
     }
   }
 
@@ -36,9 +36,9 @@ handleOpenModal = () => {this.props.openModal()}
     </Button>
   </Modal.Footer>
 </Modal>
-      <CardGroup>
+      <CardGroup className="flex-wrap">
       <Card  className="card text-center h-100" style={{ width: '16rem'}}>
-  <Card.Img className="h-100" onClick={this.handleOpenModal} variant="top" src={this.props.image_url} alt={this.props.alt} width="150rem" height="150rem"/>
+  <Card.Img className="h-100" onClick={this.openModal} variant="top" src={this.props.image_url} alt={this.props.alt} width="150rem" height="150rem"/>
   <Card.Body className="h-100">
     <Card.Title >{this.props.title}</Card.Title>
     <Card.Text className="bg-image hover-zoom" onClick={this.handleFavorites}  style={{ hover: 'cu'}}>
