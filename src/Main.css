@@ -8,6 +8,11 @@ main {
 
   
 }
+.mb-3{
+
+  position:static;
+
+}
 .card-group{
   margin: 20px;
 }

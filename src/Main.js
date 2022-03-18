@@ -1,14 +1,15 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
+import MyForm from './MyForm';
 import './Main.css';
+
 
 class Main extends React.Component {
 
   render() {
-    let hornedBeasts = [];
-    this.props.data.map((hornedBeast, index) => {
+    let hornedBeasts = this.props.data.map((hornedBeast, index) => {
       
-      return hornedBeasts.push(
+      return (
         <HornedBeast
         
         image_url={hornedBeast.image_url}
@@ -16,15 +17,32 @@ class Main extends React.Component {
         description={hornedBeast.description}
         key={index}
         // keyword={hornedBeast.keyword}
-        // horns={hornedBeast.horns}
-        />
-      )
-    })
+        horns={hornedBeast.horns}
 
+        />
+        )
+      })
+
+      let myForm =  <MyForm/>
+
+      // let myForm = this.props.data.map((hornedBeast, index) => {
+              
+      //   return (
+      //     <MyForm 
+      //     horns={hornedBeast.horns}
+      //     key={index}
+      //     />
+      //     )         
+      //   })
+     
     return (
-      <main>
+      <main >
+        
+        {myForm}
+
         {hornedBeasts}
       {/* <HornedBeast title='Billy Goat' img imageURL="billy-goat.jpeg" alt='Billy Goat' imgTitle='billy goat' description= 'A nimble and fierce horned beast'/> */}
+      
        </main>
 
     )

@@ -9,14 +9,10 @@ class HornedBeast extends React.Component {
       favorites: 0
     }
   }
-handleFavorites = () => {
-  this.setState({
-    favorites: this.state.favorites + 1
-  });
-}
-state = {
-  isOpen: false
-};
+
+handleFavorites = () => this.setState({favorites: this.state.favorites + 1});
+
+state = {isOpen: false};
 
 openModal = () => this.setState({ isOpen: true });
 closeModal = () => this.setState({ isOpen: false });
