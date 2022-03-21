@@ -2,10 +2,11 @@
 
 ## Gallery of Horns
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
 Author: Thomas Basham
 
 ## Links and Resources
+
+Shout out to Abdi Yussuf for helping me with this project
 
 [https://www.geeksforgeeks.org/how-to-fit-the-image-into-modal-popup-using-bootstrap/]
 
@@ -86,3 +87,13 @@ Still pretty lost on filtering the images
     Finish time: 5:30
 
     Actual time needed to complete: 1/2hr
+
+## Number and name of feature: Feature 3: Form
+
+    Estimate of time needed to complete: 3hr
+
+    Start time: 2:00
+
+    Finish time: n/a
+
+    Actual time needed to complete: 8 hrs
