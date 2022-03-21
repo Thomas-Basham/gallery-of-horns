@@ -23,6 +23,24 @@ How do I get the leftover two articles from centering themselves in the bottom a
 
 ## Lab-03
 
+## Lab-04
+
+What went well, that I might forget if I don’t write down?
+
+I was able to render certain components in their parent element rather than inside themselves which I wasn't doing yesterday.
+
+What did I learn today?
+
+I learned how to use the sort() method and how to use the filter() method.
+
+What should I do differently next time?
+
+I should sit with other students so that I can at least hear people talking about code. Today was hard because I didn't feel well on top of it being a tough class day
+
+What still puzzles me, or what do I need to learn more about?
+
+Still pretty lost on filtering the images
+
 ### What went well, that I might forget if I don’t write down?
 
     Creating and rendering the modal was surprisingly intuitive once I studied the docs and made some searches

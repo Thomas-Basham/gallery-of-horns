@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Modal, Button, CardGroup } from 'react-bootstrap'
+import { Card, CardGroup } from 'react-bootstrap'
 // import SelectedBeasts from './SelectedBeasts';
 
 // import Button from 'react-bootstrap/Card'
@@ -17,28 +17,25 @@ handleFavorites = () => this.setState({favorites: this.state.favorites + 1});
 
 // state = {isOpen: false};
 
-openModal = () => this.setState({ isOpen: true });
-closeModal = () => this.setState({ isOpen: false });
+// openModal = () => this.setState({ isOpen: true });
+// closeModal = () => this.setState({ isOpen: false });
 
-handleOpenModal = () => {this.props.openModal()}
+// handleClick = () => { 
+//   this.handleOpenModal();
+//  }
+
+handleOpenModal = () => {
+  this.props.openModal(this.props.image_url, this.props.title, this.props.description)
+  // console.log(this.props.title)
+}
 
   render() {
     return (
       <>  
-<Modal size="xl" aria-labelledby="contained-modal-title-vcenter" centered show={this.state.isOpen} >
-  <Modal.Header >
-    <Modal.Title> <img src={this.props.image_url} alt={this.props.alt}  width="100%" height="auto"></img></Modal.Title>
-  </Modal.Header>
-  <Modal.Body> {this.props.description} </Modal.Body>
-  <Modal.Footer>
-    <Button variant="secondary" onClick={this.closeModal}>
-      Close
-    </Button>
-  </Modal.Footer>
-</Modal>
+
       <CardGroup className="flex-wrap">
       <Card  className="card text-center h-100" style={{ width: '16rem'}}>
-  <Card.Img className="h-100" onClick={this.openModal} variant="top" src={this.props.image_url} alt={this.props.alt} width="150rem" height="150rem"/>
+  <Card.Img className="h-100" onClick={this.handleOpenModal} variant="top" src={this.props.image_url} alt={this.props.alt} width="150rem" height="150rem"/>
   <Card.Body className="h-100">
     <Card.Title >{this.props.title}</Card.Title>
     <Card.Text className="bg-image hover-zoom" onClick={this.handleFavorites}  style={{ hover: 'cu'}}>

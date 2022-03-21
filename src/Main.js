@@ -4,32 +4,42 @@ import SelectedBeasts from './SelectedBeasts';
 import MyForm from './MyForm';
 import './Main.css';
 import { Container } from 'react-bootstrap';
+// import { Container } from 'react-bootstrap';
 
 
 class Main extends React.Component {
-
+  
   render() {
-    let hornedBeasts = this.props.data.map((hornedBeast, index) => {
-      
-      return (
+
+    console.log(this.props.horns)
+
+    let allBeasts = this.props.data;
+    if (this.props.horns != null) {
+      allBeasts = this.props.data.filter(filter => filter.horns === parseInt(this.props.horns));
+    } else if (this.props.horns == null){
+      allBeasts = this.props.data;
+    }
+    ;
+ 
     
+    let hornedBeasts = allBeasts.map((hornedBeast, index) =>
+
         <HornedBeast
         // className="container"
         image_url={hornedBeast.image_url}
         title={hornedBeast.title}
         description={hornedBeast.description}
         key={index}
-        // keyword={hornedBeast.keyword}
+        keyword={hornedBeast.keyword}
         horns={hornedBeast.horns}
-
+        openModal={this.props.openModal}
         />
-  
         )
-      })
+      
 
-      let myForm = <Container> <MyForm className="sticky-top"/></Container>
 
-      let selectedBeasts = <SelectedBeasts />
+
+      // let selectedBeasts = <SelectedBeasts />
 
       // let myForm = this.props.data.map((hornedBeast, index) => {
               
@@ -42,13 +52,26 @@ class Main extends React.Component {
       //   })
      
     return (
-      <main className="d-flex flex-wrap">
-        
-        {myForm}
+      
+      <main 
+      className="d-flex flex-wrap"
+      >
+        <Container className="d-flex flex-column justify-content-center"/>
+      <MyForm handleFormInput={this.props.handleFormInput} className="align-self-center"
+      
+      // horns={this.props.horns}
+     
+      />
+      
+      <SelectedBeasts
+        image_url={this.props.image_url}
+        description= {this.props.description}
+        isOpen={this.props.isOpen}
+       />
+        {/* {myForm} */}
 
         {hornedBeasts}
-
-        {selectedBeasts}
+        
 
       {/* <HornedBeast title='Billy Goat' img imageURL="billy-goat.jpeg" alt='Billy Goat' imgTitle='billy goat' description= 'A nimble and fierce horned beast'/> */}
       
