@@ -11,6 +11,7 @@ class MyForm extends React.Component {
       // numHorns: numHorns
     }
 
+// I tried this first but it got way too complicated so I searched for another answer
   // handleSelect = (e) => {
 
   //   let selected = e.target.value;
@@ -33,7 +34,7 @@ class MyForm extends React.Component {
   }
 
 
-  handleSubmit = (event) => {
+  handleChange = (event) => {
     let number = event.target.value;
     this.props.handleFormInput(number)
     console.log(this.props.handleFormInput)
@@ -44,14 +45,14 @@ class MyForm extends React.Component {
         <>
    <Form.Group className="mb-3" >
 
-    <Form.Label>Filter Beasts by Number of Horns</Form.Label>
+    <Form.Label> Filter Beasts by Number of Horns </Form.Label>
 
-    <Form.Select onChange={this.handleSubmit}>
-      <option value="0">number of horns</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="100">100</option>
+    <Form.Select onChange={this.handleChange}>
+      <option value="null">number of horns</option>
+      <option value="1"> 1 </option>
+      <option value="2"> 2 </option>
+      <option value="3"> 3 </option>
+      <option value="100"> 100 </option>
     </Form.Select>
 {/* <Button type="submit">Submit</Button> */}
   </Form.Group>

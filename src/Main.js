@@ -3,19 +3,24 @@ import HornedBeast from './HornedBeast';
 import SelectedBeasts from './SelectedBeasts';
 import MyForm from './MyForm';
 import './Main.css';
+import { Container } from 'react-bootstrap';
 // import { Container } from 'react-bootstrap';
 
 
 class Main extends React.Component {
   
   render() {
+
     console.log(this.props.horns)
+
     let allBeasts = this.props.data;
     if (this.props.horns != null) {
       allBeasts = this.props.data.filter(filter => filter.horns === parseInt(this.props.horns));
-      console.log(allBeasts);
-    };
-    console.log(allBeasts);
+    } else if (this.props.horns == null){
+      allBeasts = this.props.data;
+    }
+    ;
+ 
     
     let hornedBeasts = allBeasts.map((hornedBeast, index) =>
 
@@ -51,8 +56,12 @@ class Main extends React.Component {
       <main 
       className="d-flex flex-wrap"
       >
-        
-      <MyForm handleFormInput={this.props.handleFormInput} />
+        <Container className="d-flex flex-column justify-content-center"/>
+      <MyForm handleFormInput={this.props.handleFormInput} className="align-self-center"
+      
+      // horns={this.props.horns}
+     
+      />
       
       <SelectedBeasts
         image_url={this.props.image_url}
