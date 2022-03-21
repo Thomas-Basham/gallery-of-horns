@@ -7,9 +7,9 @@ import './Main.css';
 
 
 class Main extends React.Component {
-
+  
   render() {
-
+    console.log(this.props.horns)
     let allBeasts = this.props.data;
     if (this.props.horns != null) {
       allBeasts = this.props.data.filter(filter => filter.horns === parseInt(this.props.horns));

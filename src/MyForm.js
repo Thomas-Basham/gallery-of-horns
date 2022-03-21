@@ -36,6 +36,7 @@ class MyForm extends React.Component {
   handleSubmit = (event) => {
     let number = event.target.value;
     this.props.handleFormInput(number)
+    console.log(this.props.handleFormInput)
   }
 
     render() {
@@ -45,8 +46,8 @@ class MyForm extends React.Component {
 
     <Form.Label>Filter Beasts by Number of Horns</Form.Label>
 
-    <Form.Select onChange={this.props.handleSubmit}>
-      <option value="0"> -- number of horns -- </option>
+    <Form.Select onChange={this.handleSubmit}>
+      <option value="0">number of horns</option>
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>

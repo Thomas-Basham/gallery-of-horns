@@ -102,6 +102,7 @@ class App extends React.Component{
         description= {this.state.description}
         title={this.state.title}
         horns = {this.state.horns}
+        
         handleFormInput = {this.handleFormInput}
         />
         <SelectedBeasts
