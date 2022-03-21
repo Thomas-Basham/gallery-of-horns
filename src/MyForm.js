@@ -1,15 +1,14 @@
 import React from 'react';
 import { Form, } from 'react-bootstrap'
-// import HornedBeast from './HornedBeast';
 
 
-let numHorns = [1, 2, 3, 100]
+// let numHorns = [1, 2, 3, 100]
 
 class MyForm extends React.Component {
   constructor(props) {
     super(props);
     this.state ={
-      numHorns: numHorns
+      // numHorns: numHorns
     }
 
   // handleSelect = (e) => {
@@ -34,20 +33,26 @@ class MyForm extends React.Component {
   }
 
 
+  handleSubmit = (event) => {
+    let number = event.target.value;
+    this.props.handleFormInput(number)
+  }
+
     render() {
       return (
         <>
-   <Form.Group className="mb-3">
+   <Form.Group className="mb-3" >
 
     <Form.Label>Filter Beasts by Number of Horns</Form.Label>
 
-    <Form.Select name="selected" onChange={this.handleSelect}>
+    <Form.Select onChange={this.props.handleSubmit}>
+      <option value="0"> -- number of horns -- </option>
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="100">100</option>
     </Form.Select>
-
+{/* <Button type="submit">Submit</Button> */}
   </Form.Group>
         
         </>
